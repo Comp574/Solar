@@ -16,11 +16,18 @@
       background-color: #3D2B1F; /* Bistre */
       color: #E1D9D1; /* Silk */
       padding: 20px 0;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Align items to the left */
+      text-align: left;
+      padding-left: 20px; /* Add padding to the left */
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between icon and text */
     }
     .logo {
-      vertical-align: middle;
-      margin-right: 10px;
       height: 50px; /* Adjust size as needed */
     }
     nav {
@@ -109,9 +116,14 @@
 </head>
 <body>
   <header>
-    <img src="image.png">
-    <h1>Welcome to Saddat Solar</h1>
-    <p>Your Partner in Sustainable Energy Solutions</p>
+    <div class="header-content">
+       <a href="https://ibb.co/zHhJ3hCp"><img src="https://i.ibb.co/zHhJ3hCp/a.png" alt="a" border="0"></a>
+      </a>
+      <div>
+        <h1>Welcome to Saddat Solar</h1>
+        <p>Your Partner in Sustainable Energy Solutions</p>
+      </div>
+    </div>
   </header>
   <nav>
     <a href="#home">Home</a>
@@ -126,7 +138,7 @@
       <h2>Home</h2>
       <p>Welcome to <strong>Saddat Solar</strong>, your trusted partner in renewable energy solutions. We specialize in providing high-quality solar panels and installation services to help you save money and protect the environment. Our mission is to make solar energy accessible and affordable for everyone.</p>
       <div class="image-container">
-        <img src="https://via.placeholder.com/800x400.png?text=Solar+Panels+on+Rooftop" alt="Solar Panels on Rooftop">
+        <img src="https://solarstack.com/wp-content/uploads/2021/02/what-solar-stack_roof-warranty.jpg" alt="Solar Panels on Rooftop">
       </div>
       <p>Solar energy is the future, and we are here to guide you every step of the way. Whether you're a homeowner or a business, we have the perfect solar solution for you.</p>
     </section>
@@ -135,9 +147,6 @@
     <section id="about">
       <h2>About Us</h2>
       <p>At <strong>Saddat Solar</strong>, we are passionate about renewable energy. With years of experience in the solar industry, our team of experts is dedicated to delivering sustainable and cost-effective energy solutions. We believe in a greener future and are committed to reducing our carbon footprint one solar panel at a time.</p>
-      <div class="image-container">
-        <img src="https://via.placeholder.com/800x400.png?text=Solar+Installation+Team" alt="Solar Installation Team">
-      </div>
       <p>Our services include:</p>
       <ul>
         <li>Residential and commercial solar panel installation</li>
